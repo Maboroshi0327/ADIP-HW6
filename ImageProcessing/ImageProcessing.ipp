@@ -332,7 +332,7 @@ namespace dip
             i = -i;
         }
 
-        return transpose(inverse);
+        return transposeMatrix(inverse);
     }
 
     template<typename T>
@@ -364,7 +364,7 @@ namespace dip
     }
 
     template<typename T>
-    std::vector<std::vector<T>> transpose(const std::vector<std::vector<T>>& matrix)
+    std::vector<std::vector<T>> transposeMatrix(const std::vector<std::vector<T>>& matrix)
     {
         int rows = (int)matrix.size();
         int cols = (int)matrix[0].size();

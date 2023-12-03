@@ -177,7 +177,7 @@ namespace dip
     T determinant(const std::vector<std::vector<T>>& matrix);
 
     template<typename T>
-    std::vector<std::vector<T>> transpose(const std::vector<std::vector<T>>& matrix);
+    std::vector<std::vector<T>> transposeMatrix(const std::vector<std::vector<T>>& matrix);
 
     template<typename T>
     std::vector<std::vector<T>> subMatrix(const std::vector<std::vector<T>>& matrix, Coordinate<int> coord);
