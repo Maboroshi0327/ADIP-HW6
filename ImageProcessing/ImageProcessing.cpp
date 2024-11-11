@@ -1003,7 +1003,7 @@ namespace dip
             {
                 // Case 1
                 std::vector<std::vector<double>> invMatrix(3, std::vector<double>(3));
-                invMatrix[0][0] = a - h * u;		invMatrix[0][1] = b - h * u;		invMatrix[0][2] = c;
+                invMatrix[0][0] = a - g * u;		invMatrix[0][1] = b - h * u;		invMatrix[0][2] = c;
                 invMatrix[1][0] = d - g * v;		invMatrix[1][1] = e - h * v;		invMatrix[1][2] = f;
                 invMatrix[2][0] = 0.0;				invMatrix[2][1] = 0.0;				invMatrix[2][2] = 1.0;
                 invMatrix = inverseMatrix(invMatrix);
